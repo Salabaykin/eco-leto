@@ -1,0 +1,194 @@
+.nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100vh;
+    left: -15.625em;
+    padding: 6rem 3.6rem 3.6rem 3.6rem;
+    position: fixed;
+    top: 0;
+    width: 15.625em;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    @media ( max-width: 1400px ) {
+        font-size: 1.42rem;
+    }
+    @media ( max-width: 520px ) {
+        width: 100%;
+        left: -100%;
+    }
+}
+
+.nav__phone {
+    font-size: 1rem;
+    padding-left: 3em;
+    margin-top: 4.375em;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 520px) {
+        font-size: 0.85rem;
+    }
+    @media (max-width: 380px) {
+        font-size: 0.7rem;
+    }
+}
+
+.nav__link {
+    font-size: 1rem;
+    position: relative;
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin-bottom: 1.7em;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:hover {
+        color: rgba(#ffffff, 0.7)
+    }
+    @media (max-width: 380px) {
+        font-size: 0.7rem;
+    }
+}
+.nav__link::before {
+    content: "";
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: -1.85em;
+    background: url("../img/smartphone-main.svg") no-repeat;
+    background-size: cover;
+    width: 1.3em;
+    height: 1.3em;
+}
+@media (max-width: 380px) {
+    .nav__link::before {
+        font-size: 0.7rem;
+    }
+}
+
+.nav__link.instagram::before {
+    content: "";
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: -1.85em;
+    background: url("../img/instagram-nav.svg") no-repeat;
+    background-size: cover;
+    width: 1.3em;
+    height: 1.3em;
+}
+@media (max-width: 380px) {
+    .nav__link.instagram::before {
+        font-size: 0.7rem;
+    }
+}
+
+.nav__link.email::before {
+    content: "";
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: -1.85em;
+    background: url("../img/email-nav.svg") no-repeat;
+    background-size: cover;
+    width: 1.3em;
+    height: 1.3em;
+}
+@media (max-width: 380px) {
+    .nav__link.email::before {
+        font-size: 0.7rem;
+    }
+}
+  
+.nav.expanded {
+    left: 0; 
+}
+
+.nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-toggle {
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 2em;
+    left: 4em;
+    position: fixed;
+    top: 4em;
+    width: 3em;
+    z-index: 2;
+    @media ( max-width: 1400px ) {
+        font-size: 0.8rem;
+    }
+}
+
+.nav-toggle:hover { 
+    opacity: 0.8; 
+}
+
+.nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #fc961d;
+    content: '';
+    height: 0.4rem;
+    width: 100%;
+}
+
+.nav-toggle .nav-toggle-bar { 
+    margin-top: 0; 
+}
+
+.nav-toggle .nav-toggle-bar::after { 
+    margin-top: 0.8rem; 
+}
+
+.nav-toggle .nav-toggle-bar::before { 
+    margin-top: -0.8rem; 
+}
+
+.nav-toggle.expanded .nav-toggle-bar { 
+    background: transparent; 
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+    background: white;
+    margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

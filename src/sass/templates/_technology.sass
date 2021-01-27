@@ -1,0 +1,75 @@
+#technology 
+    position: relative
+    background: url('../img/technology-bg.jpg') no-repeat
+    background-size: 50%
+    background-position-y: center
+    background-position-x: left
+    @media ( max-width: 980px )
+        background: none
+
+.technology
+    &__content 
+        font-size: 1rem
+        position: relative
+        background-color: #ffffff
+        width: 50%
+        height: 100%
+        margin-left: 50%
+        padding: 12em 3.75em 3.75em 4.375em
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+        @media ( max-width: 1430px )
+            font-size: 0.7rem
+        @media ( max-width: 980px )
+            margin-left: 0
+            width: 100%
+            padding-bottom: 0
+        @media ( max-width: 767px )
+            padding-top: 8em
+            padding-right: 1.75em 
+            padding-left: 1.755em
+    &__title
+        position: absolute
+        top: 1.8em
+        left: 0
+        font-size: 2.3rem
+        text-align: center
+        color: rgb(255, 255, 255)
+        line-height: 0.741
+        letter-spacing: 0.27em
+        text-transform: uppercase
+        font-weight: 300
+        color: #ffffff
+        background-color: #fc961d
+        padding: 0.4em 0.4em 0.27em 0.675em
+        @media ( max-width: 1430px )
+            font-size: 2rem
+        @media ( max-width: 860px )
+            width: 100%
+        @media ( max-width: 767px )
+            font-size: 1.5rem
+        @media ( max-width: 740px )
+            font-size: 1.2rem
+    &__text 
+        font-size: 1.5rem
+        max-height: 80%
+        overflow: auto
+        padding-right: 0.5em
+        font-weight: 300
+        @media ( max-width: 1430px )
+            font-size: 1.07rem
+    &__logo 
+        width: 21em
+        img 
+            width: 100%
+        @media ( max-width: 1430px )
+            font-size: 0.8rem
+        @media ( max-width: 1300px )
+            display: none
+
+.technology__content > .technology__text 
+    text-align: right
+.technology__title.green
+    background-color: #74A949

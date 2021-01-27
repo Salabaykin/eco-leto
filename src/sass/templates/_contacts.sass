@@ -1,0 +1,189 @@
+#contacts 
+    position: relative
+    background: url('../img/contacts-bg-2.jpg') no-repeat
+    background-size: 50%
+    background-position-y: center
+    background-position-x: right
+    @media ( max-width: 1280px )
+        background-size: contain
+
+
+.contacts
+    &__content 
+        font-size: 1rem
+        position: relative
+        background-color: #ffffff
+        width: 50%
+        height: 100%
+        padding: 12.5em 3.75em 3.75em 4.375em
+        display: flex
+        flex-direction: column
+        align-items: center
+        @media ( max-width: 1430px )
+            font-size: 0.7rem
+        @media ( max-height: 880px )
+            font-size: 0.7rem
+        @media ( max-width: 980px )
+            width: 100%
+            padding-bottom: 5em
+        @media ( max-width: 767px )
+            padding-top: 8em
+            padding-right: 1.75em 
+            padding-left: 1.755em
+    &__title
+        position: absolute
+        top: 1.8em
+        right: 0
+        font-size: 2.3rem
+        text-align: center
+        color: rgb(255, 255, 255)
+        line-height: 0.741
+        letter-spacing: 0.27em
+        text-transform: uppercase
+        font-weight: 300
+        color: #ffffff
+        background-color: #fc961d
+        padding: 0.4em 0.4em 0.27em 0.675em
+        @media ( max-width: 1430px )
+            font-size: 2rem
+        @media ( max-width: 980px )
+            left: 0
+            right: inherit
+        @media ( max-width: 860px )
+            width: 100%
+        @media ( max-width: 767px )
+            font-size: 1.5rem
+        @media ( max-width: 740px )
+            font-size: 1.2rem
+    &__form
+        margin-top: 3.5em
+        width: 30em
+        font-size: 1rem
+        img 
+            width: 100%
+        @media ( max-width: 1400px )
+            font-size: 0.7rem
+        @media ( max-width: 470px )
+            width: 100%
+        .form 
+            padding: 25px
+            border: 1px solid #fc961d
+        .form__tel, .form__name
+            font-size: 1rem
+            padding: 0.9em 1.5em
+            margin-bottom: 1.5em
+            @media ( max-width: 1400px )
+                font-size: 0.7rem
+    &__info
+        padding-left: 40px
+    &__address
+        padding-bottom: 20px
+        position: relative
+        &::before
+            content: ''
+            font-size: 1rem
+            position: absolute
+            top: 0.1em
+            left: -1.9em
+            background: url('../img/map.svg') no-repeat
+            background-size: cover
+            width: 1.325em
+            height: 1.325em
+            @media ( max-width: 1400px )
+                font-size: 0.8rem
+        address 
+            font-style: normal
+            color: rgba(0,0,0,0.55)
+            font-size: 1.3rem
+            font-weight: 300
+            letter-spacing: 3px
+            line-height: 1.2
+            @media ( max-width: 1400px )
+                font-size: 0.8rem
+    &__tel
+        position: relative
+        padding-bottom: 20px
+        text-transform: uppercase
+        font-size: 1.3rem
+        font-weight: 300
+        letter-spacing: 3px
+        line-height: 1
+        &::before
+            content: ''
+            font-size: 1rem
+            position: absolute
+            top: -3px
+            left: -2em
+            background: url('../img/smartphone.svg') no-repeat
+            background-size: cover
+            width: 1.4625em
+            height: 1.4625em
+            @media ( max-width: 1400px )
+                font-size: 0.8rem
+        a 
+            color: rgba(0,0,0,0.55)
+            &:hover
+                border-bottom: 1px solid #fc961d
+        @media ( max-width: 1400px )
+            font-size: 0.80rem
+    &__instagram
+        position: relative
+        padding-bottom: 20px
+        font-size: 1.3rem
+        font-weight: 300
+        letter-spacing: 3px
+        line-height: 1
+        &::before
+            content: ''
+            font-size: 1rem
+            position: absolute
+            top: -3px
+            left: -2em
+            background: url('../img/instagram.svg') no-repeat
+            background-size: cover
+            width: 1.4625em
+            height: 1.4625em
+            @media ( max-width: 1400px )
+                font-size: 0.8rem
+        a 
+            color: rgba(0,0,0,0.55)
+            &:hover
+                border-bottom: 1px solid #fc961d
+        @media ( max-width: 1400px )
+            font-size: 0.80rem
+    &__email
+        position: relative
+        font-style: normal
+        color: rgba(0,0,0,0.55)
+        font-size: 1.3rem
+        font-weight: 300
+        letter-spacing: 3px
+        line-height: 1.2
+        &::before
+            content: ''
+            font-size: 1rem
+            position: absolute
+            top: 0
+            left: -2em
+            background: url('../img/email.svg') no-repeat
+            background-size: cover
+            width: 1.25em
+            height: 1.25em
+            @media ( max-width: 1400px )
+                font-size: 0.8rem
+        a 
+            color: rgba(0,0,0,0.55)
+            &:hover
+                border-bottom: 1px solid #fc961d
+        @media ( max-width: 1400px )
+            font-size: 0.8rem
+    &__logo
+        font-size: 1rem
+        margin-top: 3.125em
+        width: 40%
+        img 
+            width: 100%
+        @media ( max-width: 767px )
+            width: 50%
+        @media ( max-width: 1400px )
+            font-size: 0.7rem

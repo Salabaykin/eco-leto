@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Point';
+    src: 
+        url('../fonts/') format('woff2'),
+        url('../fonts/Point-Light.woff') format('woff'),
+        url('../fonts/Point-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Point';
+    src:  
+        url('../fonts/Point-Regular.woff2') format('woff2'),
+        url('../fonts/Point-Regular.woff') format('woff'),
+        url('../fonts/Point-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Point';
+    src:
+        url('../fonts/Point-Bold.woff2') format('woff2'),
+        url('../fonts/Point-Bold.woff') format('woff'),
+        url('../fonts/Point-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
